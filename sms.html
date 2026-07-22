@@ -3,35 +3,45 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kairos — Accountability Text Messages</title>
+<title>Kairos — Accountability Text Messages: Program &amp; Opt-In Details</title>
 <style>
   body{font-family:-apple-system,Segoe UI,Roboto,sans-serif;max-width:720px;margin:40px auto;padding:0 20px;line-height:1.6;color:#1a1a1a}
-  h1{font-size:1.5rem} h2{font-size:1.1rem;margin-top:1.8em} code{background:#f4f4f4;padding:2px 5px;border-radius:4px}
+  h1{font-size:1.5rem} h2{font-size:1.1rem;margin-top:1.8em}
   .msg{background:#f4f4f4;border-radius:8px;padding:10px 14px;margin:8px 0}
+  .shot{max-width:340px;width:100%;border:1px solid #ddd;border-radius:14px;display:block;margin:14px 0}
+  .quote{border-left:3px solid #ccc;padding-left:12px;color:#333}
 </style>
 </head>
 <body>
 <h1>Kairos — Accountability Text Messages</h1>
-<p>Kairos is a personal screen-time app operated by Alexander Spiridellis (Sole Proprietor). This page describes our accountability-partner SMS program and how recipients opt in.</p>
+<p>Kairos is a personal screen-time iOS app operated by Alexander Spiridellis (Sole Proprietor). This page documents our accountability-partner SMS program, the exact call to action where opt-in begins, and the consent flow. <strong>The in-app screen shown below is the only opt-in path — there is no web signup form.</strong></p>
 
-<h2>What the program is</h2>
-<p>A Kairos user can invite one <strong>accountability partner</strong> — a person they know — to receive a short daily text summarizing which of the user's own self-set app limits they went over that day. Messages are personal accountability notifications only. No marketing, promotional, or third-party content is ever sent.</p>
+<h2>The call to action (in-app screen)</h2>
+<p>Inside the Kairos iOS app, a user invites one accountability partner — someone they personally know — on this screen:</p>
+<img class="shot" src="kairos-optin-screen.png" alt="Kairos in-app accountability partner opt-in screen">
+<p>What the screen requires, exactly as shown:</p>
+<ul>
+<li>The disclosure displayed above the form: <span class="quote">"one person gets a text at day's end when you go over a limit. they confirm by replying YES, and can reply STOP anytime."</span></li>
+<li>A consent checkbox — <strong>unchecked by default</strong> — reading: <span class="quote">"i have their permission to send them a daily check-in."</span> The <em>send invite</em> button stays disabled until it is actively checked.</li>
+</ul>
 
-<h2>How recipients opt in (two-step confirmation)</h2>
+<h2>The two-step confirmation (recipient consent)</h2>
 <ol>
-<li>Inside the Kairos app, the user enters the mobile number of someone they personally know and asks Kairos to invite them.</li>
-<li>The recipient receives <strong>one</strong> confirmation text and must reply <strong>YES</strong> to opt in. No further messages are sent unless they reply YES. Their YES reply is stored as their express consent.</li>
+<li>After the user submits the form above, the recipient receives <strong>one</strong> confirmation text:
+<div class="msg">kairos: [name] added you as their accountability partner. reply YES to start getting their daily check-in, STOP to decline.</div></li>
+<li><strong>No further messages are sent unless the recipient replies YES.</strong> The YES reply is stored as the recipient's express consent. On YES they receive:
+<div class="msg">kairos: you're all set as an accountability partner. expect one check-in a day. reply HELP for help, STOP to opt out. msg &amp; data rates may apply.</div></li>
 </ol>
 
-<h2>Example messages</h2>
-<div class="msg">kairos: alex added you as their accountability partner. reply YES to start getting their daily check-in, STOP to decline.</div>
-<div class="msg">kairos: alex today went over their limits: instagram (2h) · tiktok (1h). reply STOP to opt out.</div>
+<h2>What opted-in recipients receive</h2>
+<div class="msg">kairos: [name] today went over their limits: instagram (2h) · tiktok (1h). reply STOP to opt out.</div>
+<p>Personal accountability notifications only. No marketing, promotional, or third-party content, ever.</p>
 
-<h2>Frequency, opt-out, and rates</h2>
-<p>Up to one message per day, only on days a limit is exceeded. Reply <strong>STOP</strong> at any time to stop all messages, or <strong>HELP</strong> for help. Message and data rates may apply.</p>
+<h2>Frequency, opt-out, help, rates</h2>
+<p>Up to one message per day, only on days a limit is exceeded. Reply <strong>STOP</strong> at any time to stop all messages, <strong>START</strong> to resubscribe, or <strong>HELP</strong> for help (support: alex@spiridellis.com). Message and data rates may apply.</p>
 
 <h2>Privacy &amp; terms</h2>
-<p>Phone numbers are never shared with third parties other than our SMS provider (Twilio). See our
+<p>Phone numbers are never shared with third parties other than our SMS delivery provider (Twilio). See our
 <a href="https://aspiridellis.github.io/kairos-legal/privacy.html">Privacy Policy</a> and
 <a href="https://aspiridellis.github.io/kairos-legal/terms.html">Terms of Service</a>.</p>
 </body>
