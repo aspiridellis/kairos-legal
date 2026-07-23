@@ -10,13 +10,18 @@
   .msg{background:#f4f4f4;border-radius:8px;padding:10px 14px;margin:8px 0}
   .shot{max-width:340px;width:100%;border:1px solid #ddd;border-radius:14px;display:block;margin:14px 0}
   .quote{border-left:3px solid #ccc;padding-left:12px;color:#333}
+  .thread{max-width:340px;border:1px solid #ddd;border-radius:14px;padding:16px;margin:14px 0;background:#fff}
+  .in,.out{max-width:85%;padding:9px 13px;border-radius:16px;margin:6px 0;font-size:.95rem;line-height:1.4}
+  .in{background:#e9e9eb;color:#111;margin-right:auto}
+  .out{background:#34c759;color:#fff;margin-left:auto;text-align:right}
+  .cap{font-size:.8rem;color:#666}
 </style>
 </head>
 <body>
 <h1>Kairos — Accountability Text Messages</h1>
-<p>Kairos is a personal screen-time iOS app operated by Alexander Spiridellis (Sole Proprietor). This page documents our accountability-partner SMS program, the exact call to action where opt-in begins, and the consent flow. <strong>The in-app screen shown below is the only opt-in path — there is no web signup form.</strong></p>
+<p>Kairos is a personal screen-time iOS app operated by Alexander Spiridellis (Sole Proprietor). This page documents our accountability-partner SMS program, the exact call to action where opt-in begins, and the full consent flow. Messages are sent from <strong>(774) 485-5801</strong>. <strong>The in-app screen shown below is the only collection point — there is no web signup form.</strong></p>
 
-<h2>The call to action (in-app screen)</h2>
+<h2>Step 1 — The call to action (in-app screen)</h2>
 <p>Inside the Kairos iOS app, a user invites one accountability partner — someone they personally know — on this screen:</p>
 <img class="shot" src="kairos-optin-screen.png" alt="Kairos in-app accountability partner opt-in screen">
 <p>What the screen requires, exactly as shown:</p>
@@ -25,17 +30,15 @@
 <li>A consent checkbox — <strong>unchecked by default</strong> — reading: <span class="quote">"i have their permission to send them a daily check-in."</span> The <em>send invite</em> button stays disabled until it is actively checked.</li>
 </ul>
 
-<h2>The two-step confirmation (recipient consent)</h2>
-<ol>
-<li>After the user submits the form above, the recipient receives <strong>one</strong> confirmation text:
-<div class="msg">kairos: [name] added you as their accountability partner. reply YES to start getting their daily check-in, STOP to decline.</div></li>
-<li><strong>No further messages are sent unless the recipient replies YES.</strong> The YES reply is stored as the recipient's express consent. On YES they receive:
-<div class="msg">kairos: you're all set as an accountability partner. expect one check-in a day. reply HELP for help, STOP to opt out. msg &amp; data rates may apply.</div></li>
-</ol>
-
-<h2>What opted-in recipients receive</h2>
-<div class="msg">kairos: [name] today went over their limits: instagram (2h) · tiktok (1h). reply STOP to opt out.</div>
-<p>Personal accountability notifications only. No marketing, promotional, or third-party content, ever.</p>
+<h2>Step 2 — Keyword opt-in by the recipient (the full conversation)</h2>
+<p class="cap">Rendering of the complete SMS consent exchange between Kairos ((774) 485-5801) and the recipient — exact message text:</p>
+<div class="thread">
+  <div class="in">kairos: alex added you as their accountability partner. reply YES to start getting their daily check-in, STOP to decline.</div>
+  <div class="out">YES</div>
+  <div class="in">kairos: you're all set as an accountability partner. expect one check-in a day. reply HELP for help, STOP to opt out. msg &amp; data rates may apply.</div>
+  <div class="in">kairos: alex today went over their limits: instagram (2h). reply STOP to opt out.</div>
+</div>
+<p><strong>No recurring messages are sent unless the recipient texts YES to (774) 485-5801.</strong> The YES reply is stored as the recipient's express consent.</p>
 
 <h2>Frequency, opt-out, help, rates</h2>
 <p>Up to one message per day, only on days a limit is exceeded. Reply <strong>STOP</strong> at any time to stop all messages, <strong>START</strong> to resubscribe, or <strong>HELP</strong> for help (support: alex@spiridellis.com). Message and data rates may apply.</p>
